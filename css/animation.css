@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #header a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -40,5 +44,27 @@ footer img:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(rgba(0, 0, 0, 0.5));
   padding: 3px;
+}
+
+[data-anime] {
+  opacity: 0;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+[data-anime="left"] {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  -webkit-transform: translate3d(50px, 0, 0);
+          transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 /*# sourceMappingURL=animation.css.map */

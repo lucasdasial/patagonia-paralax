@@ -15,19 +15,22 @@
         <div class="bg-img paralax">
 
         </div>
+        <div class="down rellax" data-rellax-speed="-5">
+            <h2>Role pra baixo</h2>
+            <img src="./imgs/down-arrow.png">
+        </div>
         <div class="title-box">
-
-            <h1>Patagonia </h1>
-            <p>Um dos locais mais lindo do mundo</p><br>
-
-            <a href="#location">Conheça mais</a>
+            
+            <h1 class="rellax" data-rellax-speed="4">Patagonia </h1>
+            <p class="rellax" data-rellax-speed="1"> Um dos locais mais lindo do mundo</p><br>
+            
     </section>
     </div>
 
     <section id="location">
-        <h1>Onde fica a patagonia?</h1>
+        <h1 data-anime="right">Onde fica a patagonia?</h1>
         <div class="container">
-            <div class="info">
+            <div class="info"data-anime="left">
                 <div class="icon-map">
                     <img src="./imgs/icon-map.png" alt="ver no maps" width="80px">
                 </div>
@@ -45,7 +48,7 @@
 
             </div>
 
-            <div>
+            <div data-anime="left">
                 <iframe class="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17891041.580305576!2d-82.0420569813291!3d-47.93077045425771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23228a2d475b%3A0x8e34a3d5e5b0a213!2sPatagonia%2C%20Ushuaia%2C%20Tierra%20del%20Fuego%2C%20Argentina!5e0!3m2!1spt-BR!2sbr!4v1617893381332!5m2!1spt-BR!2sbr"
                     allowfullscreen="" loading="lazy"></iframe>
@@ -55,14 +58,14 @@
 
     <section id="ushuaia-bg">
         <div class="bg-img "></div>
-        <div class="title-box">
+        <div class="title-box"data-anime="right">
             <h1>Ushuaia</h1>
             <p>O fim do mundo </p>
         </div>
 
     </section>
     <section id="ushuaia-info">
-        <div class="container">
+        <div class="container"data-anime="left">
             <div class="info">
                 Ushuaia é uma cidade turística na Argentina que fica no arquipélago da Terra do Fogo, é a cidade mais ao
                 sul no globo terrestre por isso é chamada de "fim do mundo".
@@ -76,12 +79,14 @@
     </section>
     <section id="geleria-bg">
         <div class="bg-img "></div>
+        <h1 id="galeria-t" data-anime="right">Galeria</h1>
+        <img data-anime="left" class="icon-cel" src="./imgs/smartphone.png">
     </section>
 
+    
 
-
-    <section id="galeria">
-        <h1 class="icon-phone">Galeria <img src="./imgs/smartphone.png"></h1>
+    <section id="galeria" data-anime="left" >
+        
         <div class="container-card">
             <div class="card"><img src="./imgs/geleira-perito-moreno.png"></div>
             <div class="card"><img src="./imgs/montanhas-patagonia.jpg"></div>
@@ -91,10 +96,10 @@
             <div class="card"><img src="./imgs/ushuaia.jpg"></div>
             <div class="card"><img src="./imgs/lagoa2.JPG"></div>
             <div class="card"><img src="./imgs/montanha2.jpg"></div>
-
         </div>
     </section>
-    <footer>
+
+    <footer id="footer">
         <p>desenvolvido por Lucas Alves</p>
         <div class="social">
             <a href="https://www.linkedin.com/in/alveslucano/" target="_blank">
@@ -104,8 +109,11 @@
             <a href="https://twitter.com/oh_dasilva" target="_blank">
                 <img src="./imgs/twitter.png" width="40px"></a>
         </div>
-        </div>
-    </footer>
+    </footer >
+
 </body>
-<script src="./js/galeria.js"></script>
+
+<script src="./js/lib-rellax.js"></script>
+<script src="./js/script.js"></script>
+
 </html>

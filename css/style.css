@@ -49,13 +49,17 @@ h1 {
 }
 
 .icon-map {
-  width: 400px;
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.icon-cel {
+  width: 100px;
 }
 
 #header {
@@ -71,6 +75,14 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#header .down img {
+  width: 60px;
 }
 
 #header .bg-img {
@@ -103,14 +115,6 @@ h1 {
   font-size: 4em;
 }
 
-#header a {
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-}
-
 #location {
   width: 100vw;
   min-height: 85vh;
@@ -127,8 +131,8 @@ h1 {
   border-radius: 10px;
   border: solid 5px #08bd96;
   margin: 30px 0;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  height: 350px;
 }
 
 #ushuaia-bg {
@@ -181,6 +185,21 @@ h1 {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#geleria-bg h1 {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 40px;
+  margin: 0 10px;
 }
 
 #galeria {
@@ -202,11 +221,6 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#galeria .icon-phone img {
-  width: 55px;
-  color: white;
 }
 
 #galeria .container-card {
