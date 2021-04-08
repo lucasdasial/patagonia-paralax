@@ -1,149 +1,160 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    
+  @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 }
-body{
-    overflow-x:hidden ;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.7em;
-    color: white;
-    background-color: rgb(238, 238, 238);
+body {
+  overflow-x: hidden;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.7em;
+  color: white;
+  background-color: rgb(238, 238, 238);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.container {
+  max-width: 920px;
+
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.info {
+  min-width: 340px;
+  max-width: 400px;
+  margin: 15px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+.go-maps {
+  width: 340px;
+  text-align: center;
 }
 
 #header {
-    width: 100vw;
-    height: 100vh;
-    
+  width: 100vw;
+  height: 100vh;
 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #header .bg-img {
-    width: 100vw;
-    height: 100vh;
-    
-    background: url(../imgs/patagonia2.jpg);
-    position: absolute;
-    background-position: center ;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -1;
-    
+  width: 100vw;
+  height: 100vh;
+
+  background: url(../imgs/patagonia2.jpg);
+  position: absolute;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
 }
 #header .bg-img::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #header .title-box {
-    padding: 5px;
-    margin: 15px;
-    
-}
-h1{
-    font-weight: 700;
-    font-size: 3em;
+  padding: 5px;
+  margin: 15px;
 }
 #header a {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
 }
 
-#location{
-    width: 100vw;
-    min-height: 85vh;
-    background:#1a1a1a;
-    text-align: center;
+#location {
+  width: 100vw;
+  min-height: 85vh;
+  background: #1a1a1a;
+  text-align: center;
+}
+#location .info p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+#location .map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
 
-}
- .container{
-    max-width: 920px;
-    
-    margin: auto;
-    display: flex; 
-    justify-content: space-around; 
-    align-items:flex-start;
-    flex-wrap: wrap;
-}
-.info{
-    min-width: 340px;
-    max-width: 400px;
-    margin: 15px;
-    text-align: justify;
-    
-    text-decoration: none;
-   
-    
-}
-#location .info p{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-}
-.go-maps{
-    width: 340px;
-    text-align: center;
-}
-#location .map{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 30px 0;
-}
-#ushuaia-bg{
-    width: 100vw;
-    height: 60vh;
-    background: url(../imgs/ushuaia.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
+#ushuaia-bg {
+  width: 100vw;
+  height: 60vh;
+  background: url(../imgs/ushuaia.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#ushuaia-bg .title-box{
-    text-align: center;
-    padding:5px 60px;
-    background: rgba(0, 0, 0,0.6);
+#ushuaia-bg .title-box {
+  text-align: center;
+  padding: 5px 60px;
+  background: rgba(0, 0, 0, 0.6);
 }
 #ushuaia-info {
-    width: 100vw;
-    min-height: 40vh;
-    padding-bottom: 20px;
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    text-align: justify;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-
-}
-#galeria{
-    width: 100vw;
-    min-height: 80vh;
-    background-color: #1a1a1a;
-    
-    text-align: center;
-    
+  width: 100vw;
+  min-height: 40vh;
+  padding-bottom: 20px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#galeria {
+  width: 100vw;
+  min-height: 80vh;
+  background-color: #1a1a1a;
+
+  text-align: center;
+}
+#galeria .container-card {
+  max-width: 920px;
+  
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#galeria .card {
+  width: 200px;
+  height: 200px;
+  background: white;
+  margin: 5px;
+}
+#galeria img{
+  width: 100%;
+  height: 100%;
+}
