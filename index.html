@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patagonia-paralax</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/break-points.css">
+    <link rel="stylesheet" href="./css/animation.css">
 </head>
 
 <body>
     <section id="header">
-        <div class="bg-img paralax"></div>
+        <div class="bg-img paralax">
+
+        </div>
         <div class="title-box">
 
             <h1>Patagonia </h1>
@@ -26,31 +28,27 @@
         <h1>Onde fica a patagonia?</h1>
         <div class="container">
             <div class="info">
+                <div class="icon-map">
+                    <img src="./imgs/icon-map.png" alt="ver no maps" width="80px">
+                </div>
 
                 <p>
                     Considerada uma das regiões mais lindas do globo a Patagonia é uma região localizada no extremo sul
                     da América latina e abrange dois paises, Argentina e Chíle.
                     <br>
                     <br>
-                    <p>
-                        A Patagônia é a área com mais geleiras fora das zonas polares, proporcionando paisagens
-                        incríveis
-                    </p>
-                    <div class="go-maps">
-
-                        <a href="https://www.google.com.br/maps/place/Patagonia/@-44.5828893,-87.1710832,4z/data=!3m1!4b1!4m5!3m4!1s0xbdefadac12340ab3:0xf5803d880367e318!8m2!3d-41.8101472!4d-68.9062689"
-                            target="_blank">
-                            <img src="./imgs/icon-map.png" alt="ver no maps" width="80px">
-                            <p>ver no maps</p>
-                        </a>
-                    </div>
-
+                <p>
+                    A Patagônia é a área com mais geleiras fora das zonas polares, proporcionando paisagens
+                    incríveis
+                </p>
 
 
             </div>
 
-            <div class="map">
-                <img src="./imgs/Pat_map.png" alt="mapa da patagonia" width="250px">
+            <div>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17891041.580305576!2d-82.0420569813291!3d-47.93077045425771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23228a2d475b%3A0x8e34a3d5e5b0a213!2sPatagonia%2C%20Ushuaia%2C%20Tierra%20del%20Fuego%2C%20Argentina!5e0!3m2!1spt-BR!2sbr!4v1617893381332!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -76,12 +74,14 @@
 
         </div>
     </section>
-    <section id="ushuaia-bg">
+    <section id="geleria-bg">
         <div class="bg-img "></div>
     </section>
 
+
+
     <section id="galeria">
-        <h1>Galeria</h1>
+        <h1 class="icon-phone">Galeria <img src="./imgs/smartphone.png"></h1>
         <div class="container-card">
             <div class="card"><img src="./imgs/geleira-perito-moreno.png"></div>
             <div class="card"><img src="./imgs/montanhas-patagonia.jpg"></div>
@@ -90,7 +90,7 @@
             <div class="card"><img src="./imgs/geleira.jpg"></div>
             <div class="card"><img src="./imgs/ushuaia.jpg"></div>
             <div class="card"><img src="./imgs/lagoa2.JPG"></div>
-            <div class="card" id="last-card"><img src="./imgs/montanha2.jpg"></div>
+            <div class="card"><img src="./imgs/montanha2.jpg"></div>
 
         </div>
     </section>
@@ -104,10 +104,8 @@
             <a href="https://twitter.com/oh_dasilva" target="_blank">
                 <img src="./imgs/twitter.png" width="40px"></a>
         </div>
-
-
         </div>
     </footer>
 </body>
-
+<script src="./js/galeria.js"></script>
 </html>
