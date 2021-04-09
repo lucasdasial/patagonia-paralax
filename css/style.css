@@ -328,6 +328,9 @@ footer a {
 }
 
 @media (max-width: 370px) {
+  #galeria-bg, #ushuaia-bg {
+    height: 30vh;
+  }
   #galeria .card {
     width: 100px;
     height: 100px;
