@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patagonia-paralax</title>
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
 </head>
@@ -88,14 +90,40 @@
     <section id="galeria" data-anime="left" >
         
         <div class="container-card">
-            <div class="card"><img src="./imgs/geleira-perito-moreno.png"></div>
-            <div class="card"><img src="./imgs/montanhas-patagonia.jpg"></div>
-            <div class="card"><img src="./imgs/ushuaia2.jpg"></div>
-            <div class="card"><img src="./imgs/neve.jpg"></div>
-            <div class="card"><img src="./imgs/geleira.jpg"></div>
-            <div class="card"><img src="./imgs/ushuaia.jpg"></div>
-            <div class="card"><img src="./imgs/lagoa2.JPG"></div>
-            <div class="card"><img src="./imgs/montanha2.jpg"></div>
+            <div class="card">
+                <a href="./imgs/geleira-perito-moreno.png" data-lightbox="galeria">
+                    <img src="./imgs/geleira-perito-moreno.png">
+                </a>
+            </div>
+            <div class="card">
+                <a href="./imgs/montanhas-patagonia.jpg"data-lightbox="galeria">
+                    <img src="./imgs/montanhas-patagonia.jpg">
+                </a>
+            </div>
+            <div class="card">
+                <a href="/imgs/ushuaia.jpg"data-lightbox="galeria">
+                    <img src="./imgs/ushuaia2.jpg">
+                </a>
+            </div>
+            <div class="card"><a href="./imgs/neve.jpg"data-lightbox="galeria">
+                <img src="./imgs/neve.jpg">
+            </a>
+            </div>
+            <div class="card"><a href="./imgs/geleira.jpg"data-lightbox="galeria">
+                <img src="./imgs/geleira.jpg">
+            </a>
+            </div>
+            <div class="card"><a href="./imgs/ushuaia.jpg"data-lightbox="galeria">
+                <img src="./imgs/ushuaia.jpg"></a>
+            </div>
+            <div class="card"><a href="./imgs/lagoa2.JPG"data-lightbox="galeria">
+                <img src="./imgs/lagoa2.JPG">
+            </a>
+            </div>
+            <div class="card"><a href="./imgs/montanha2.jpg"data-lightbox="galeria">
+                <img src="./imgs/montanha2.jpg">
+            </a>
+            </div>
         </div>
     </section>
 
@@ -113,6 +141,8 @@
 
 </body>
 
+<script src="./js/lightbox-plus-jquery.js"></script>
+<script src="./js/lightbox.min.js"></script>
 <script src="./js/lib-rellax.js"></script>
 <script src="./js/script.js"></script>
 
